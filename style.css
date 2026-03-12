@@ -1,1 +1,105 @@
-/* Add styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+header p {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.lotto-numbers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 2.5rem;
+}
+
+.lotto-number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.lotto-number.active {
+    animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Range-based colors */
+.lotto-number.range-1 { background-color: #fbc400; color: white; } /* 1-10: Yellow */
+.lotto-number.range-2 { background-color: #69c8f2; color: white; } /* 11-20: Blue */
+.lotto-number.range-3 { background-color: #ff7272; color: white; } /* 21-30: Red */
+.lotto-number.range-4 { background-color: #aaa; color: white; }    /* 31-40: Grey */
+.lotto-number.range-5 { background-color: #b0d840; color: white; } /* 41-45: Green */
+
+#generate-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #3498db;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+    transition: background 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+#generate-btn:hover {
+    background: #2980b9;
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+}
+
+#generate-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);
+}
+
+@media (max-width: 400px) {
+    .lotto-number {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1.1rem;
+    }
+}
