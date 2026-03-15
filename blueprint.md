@@ -1,33 +1,28 @@
-# Lotto Number Generator Blueprint
+# Dinner Menu Recommender Blueprint
 
 ## Overview
-A simple, visually appealing web application that generates random lotto numbers (1-45) with a staggered animation and color-coded results based on number ranges.
+A fun, modern web application that solves the "What should I eat for dinner?" dilemma by providing a random menu recommendation with a cool shuffle animation and category-based styling.
 
 ## Project Details
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript.
-- **Styling:** Modern UI with gradients, shadows, and responsive design.
+- **Theme:** Warm colors (Orange/Red) associated with food and appetite.
 - **Features:**
-    - Generates 6 unique random numbers between 1 and 45.
-    - Sorts numbers in ascending order.
-    - Staggered animation when numbers are displayed.
-    - Color-coded balls based on ranges:
-        - 1-10: Yellow
-        - 11-20: Blue
-        - 21-30: Red
-        - 31-40: Grey
-        - 41-45: Green
+    - Recommends a random dinner menu from multiple categories (Korean, Chinese, Japanese, Western, Snack).
+    - Shuffle animation before revealing the final recommendation.
+    - Category-based card colors (e.g., Red for Korean, Yellow for Western).
+    - Responsive design for mobile and desktop.
 - **Communication:**
     - Integrated Partnership Inquiry Form using Formspree.
 - **Hosting:** Configured for Firebase Hosting.
 
 ## Current Plan
-1.  **Initial Setup:** (Completed) Basic HTML/CSS/JS structure for lotto generation.
-2.  **UI/UX Improvement:** (Completed) Added animations, range-based colors, and a polished container design.
-3.  **Repository Integration:** (Completed) Linked and pushed the codebase to `https://github.com/bokkyun/bokkyun`.
-4.  **Partnership Form:** (Completed) Added a contact form for business inquiries linked to Formspree.
-5.  **Documentation:** (In Progress) Keeping `blueprint.md` and repository updated.
+1.  **Pivot to Menu Recommender:** (Completed) Converted the lotto generator into a food recommendation site.
+2.  **UI/UX Overhaul:** (Completed) Updated background, typography, and card styles for a food theme.
+3.  **Shuffle Logic:** (Completed) Implemented a random picker with a visual shuffle effect.
+4.  **Repository Integration:** (Completed) Linked and pushed the codebase to `https://github.com/bokkyun/bokkyun`.
+5.  **Partnership Form:** (Completed) Retained the contact form for business inquiries.
 
 ## Future Enhancements
-- Add a "History" feature to track previous generations.
-- Implement a "Save" feature to keep favorite sets of numbers.
-- Add sound effects for the generation process.
+- Add more menus and categories (Dessert, Drinks, etc.).
+- Allow users to filter by category before recommending.
+- Integrate a map search (e.g., Kakao/Naver Map) to find nearby restaurants for the recommended menu.
