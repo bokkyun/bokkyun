@@ -16,13 +16,16 @@ A simple, visually appealing web application that generates random lotto numbers
         - 21-30: Red
         - 31-40: Grey
         - 41-45: Green
+- **Communication:**
+    - Integrated Partnership Inquiry Form using Formspree.
 - **Hosting:** Configured for Firebase Hosting.
 
 ## Current Plan
 1.  **Initial Setup:** (Completed) Basic HTML/CSS/JS structure for lotto generation.
 2.  **UI/UX Improvement:** (Completed) Added animations, range-based colors, and a polished container design.
 3.  **Repository Integration:** (Completed) Linked and pushed the codebase to `https://github.com/bokkyun/bokkyun`.
-4.  **Documentation:** (In Progress) Creating `blueprint.md` and keeping it updated.
+4.  **Partnership Form:** (Completed) Added a contact form for business inquiries linked to Formspree.
+5.  **Documentation:** (In Progress) Keeping `blueprint.md` and repository updated.
 
 ## Future Enhancements
 - Add a "History" feature to track previous generations.
